@@ -16,6 +16,7 @@ public class Menu extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //testing the commit aspect of github
         Button bGoogle = (Button) findViewById(R.id.google_button);
         bGoogle.setOnClickListener(new View.OnClickListener(){
             @Override
