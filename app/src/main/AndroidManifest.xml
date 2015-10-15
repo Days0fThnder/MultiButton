@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jean_leman.multibutton" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NTERACT_ACROSS_USERS_FULL" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/splash"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.jean_leman.multibutton.CLEARSCREEN"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Web"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.jean_leman.multibutton.Web"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Music"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.example.jean_leman.multibutton.Music"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
